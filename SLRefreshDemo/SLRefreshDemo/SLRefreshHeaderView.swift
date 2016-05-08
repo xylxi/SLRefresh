@@ -117,7 +117,6 @@ extension RefreshHeaderView {
                 if state == .Normal && dis < 0 {
                     // 松手就能刷新
                     state = .Pulling
-                    print(dis)
                 }else if state == .Pulling && dis > 0 {
                     // 松手不能刷新
                     state = .Normal

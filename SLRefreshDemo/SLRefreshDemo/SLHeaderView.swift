@@ -130,6 +130,7 @@ public class HeaderView: UIView {
     }
     func enterLoading() {
         self.loading = true
+        self.textProgressLayer.strokeEnd = 0.0
         self.textProgressLayer.removeFromSuperlayer()
         self.setupTextGradientLayer()
     }
